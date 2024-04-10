@@ -101,3 +101,5 @@
     | cut -c1-85"
 [diff]
 	tool = vimdiff
+[commit]
+	template = ~/.config/git/.gitmessage.txt
