@@ -9,7 +9,7 @@ alias ~="cd ~"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
-alias ic="cd /Users/jgo/Library/Mobile\ Documents/com~apple~CloudDocs"
+alias ic="cd /Users/jinmugo/Library/Mobile\ Documents/com~apple~CloudDocs"
 alias obsi="$HOME/obs_jgo/"
 
 ### VIM
