@@ -49,3 +49,11 @@ alias nrd="npm run dev"
 alias nrs="npm run start"
 alias ni="npm i"
 alias pi="ssh jgopi"
+
+
+### zsh-history-substring-search.zsh
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
+
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
