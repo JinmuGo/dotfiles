@@ -2,3 +2,5 @@ zsh/.zsh_history
 
 tmux/plugins/*
 !tmux/plugins/tpm/
+
+gcloud

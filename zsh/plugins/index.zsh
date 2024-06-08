@@ -1,6 +1,5 @@
 ### --- plug-in ------------------------------------------------
-
-ZSH_PLUGINS=$ZSH/plugins
+local ZSH_PLUGINS=$ZSH/plugins
 
 source $ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZSH_PLUGINS/zsh-git/git.plugin.zsh
@@ -11,7 +10,7 @@ source $ZSH_PLUGINS/zsh-fzf/fzf.plugin.zsh
 source $ZSH_PLUGINS/zsh-history-substring-search/zsh-history-substring-search.zsh
 source $ZSH_PLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+eval "$(zoxide init zsh)"
 
 fpath=($ZSH_PLUGINS/zsh-completions/src $fpath)
-[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
