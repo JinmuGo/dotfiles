@@ -5,7 +5,7 @@
 	precomposeunicode = true
 	quotepath = false
 	autocrlf = input
-	editor = nvim
+	editor = lvim
     pager = delta
 [init]
 	defaultBranch = main
@@ -39,6 +39,7 @@
     s = status -s
     co = checkout
     ci = commit
+    ciam = commit --am
     br = branch
     sw = switch
     f  = fetch

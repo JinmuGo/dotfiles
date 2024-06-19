@@ -11,7 +11,13 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-eval "$(starship init zsh)"
+
+# Check that the function `starship_zle-keymap-select()` is defined.
+# xref: https://github.com/starship/starship/issues/3418
+type starship_zle-keymap-select >/dev/null || \
+  {
+    eval "$(starship init zsh)"
+  }
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/jinmugo/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jinmugo/google-cloud-sdk/path.zsh.inc'; fi
@@ -49,7 +55,6 @@ setopt AUTO_CD
 bindkey '  ' autosuggest-accept
 bindkey ";3D" backward-word
 bindkey ";3C" forward-word
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/jinmugo/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jinmugo/google-cloud-sdk/path.zsh.inc'; fi
 

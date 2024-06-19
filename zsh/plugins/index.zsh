@@ -9,6 +9,7 @@ source $ZSH_PLUGINS/zsh-docker-compose/docker-compose.plugin.zsh
 source $ZSH_PLUGINS/zsh-fzf/fzf.plugin.zsh
 source $ZSH_PLUGINS/zsh-history-substring-search/zsh-history-substring-search.zsh
 source $ZSH_PLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZSH_PLUGINS/zsh-kubectl/kubectl.plugin.zsh
 
 eval "$(zoxide init zsh)"
 
