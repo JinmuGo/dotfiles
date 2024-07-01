@@ -1,4 +1,5 @@
 zsh/.zsh_history
+configstore/
 
 tmux/plugins/*
 !tmux/plugins/tpm/

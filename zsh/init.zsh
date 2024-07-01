@@ -1,15 +1,10 @@
 ### INIT
 
 autoload -Uz compinit && compinit
-export PATH=$HOME/bin:/usr/local/bin:/opt/bin:/opt/homebrew/bin:$PATH
-export PATH=$HOME/.local/bin:$PATH
-export PATH=$HOME/.cargo/bin:$PATH
-
+export PATH=$HOME/bin:/usr/local/bin:/opt/bin:/opt/homebrew/bin:$PATH:$HOME/.local/bin
 export FPATH=/opt/homebrew/bin/eza:$FPATH
+
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Check that the function `starship_zle-keymap-select()` is defined.
@@ -19,16 +14,11 @@ type starship_zle-keymap-select >/dev/null || \
     eval "$(starship init zsh)"
   }
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/jinmugo/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jinmugo/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/jinmugo/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jinmugo/google-cloud-sdk/completion.zsh.inc'; fi
-
 ### ZSH HOME
 export ZSH=$HOME/.config/zsh
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 
+source $ZSH/functions/index.zsh
 ### EDITOR
 export EDITOR="/opt/homebrew/bin/nvim"
 
@@ -55,8 +45,4 @@ setopt AUTO_CD
 bindkey '  ' autosuggest-accept
 bindkey ";3D" backward-word
 bindkey ";3C" forward-word
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/jinmugo/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jinmugo/google-cloud-sdk/path.zsh.inc'; fi
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/jinmugo/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jinmugo/google-cloud-sdk/completion.zsh.inc'; fi

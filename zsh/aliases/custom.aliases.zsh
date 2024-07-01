@@ -20,6 +20,7 @@ alias cuvi="$HOME/Programming/42cuvi"
 ### VIM
 alias viz="vi $ZSH/.zshrc"
 alias viza="vi $ZSH/aliases/custom.aliases.zsh"
+alias vizpi="vi $ZSH/plugins/index.zsh"
 alias vizi="vi $ZSH/init.zsh"
 alias viw="vi $HOME/.config/wezterm/wezterm.lua"
 alias vin="vi $HOME/.config/nvim/init.vim"
@@ -35,6 +36,7 @@ alias gd="git diff"
 alias gpf="git push -f"
 alias gds="git diff --staged"
 alias gls="git logs"
+alias gsa="git submodule add"
 
 # LS
 alias l="ls"
