@@ -37,6 +37,7 @@ alias gpf="git push -f"
 alias gds="git diff --staged"
 alias gls="git logs"
 alias gsa="git submodule add"
+alias gf="git fetch"
 
 # LS
 alias l="ls"
