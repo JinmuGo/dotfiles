@@ -3,6 +3,9 @@
 autoload -Uz compinit && compinit
 export PATH=$HOME/bin:/usr/local/bin:/opt/bin:/opt/homebrew/bin:$PATH:$HOME/.local/bin
 export FPATH=/opt/homebrew/bin/eza:$FPATH
+export PATH=$HOME/goinfre/node/bin:$PATH
+
+defaults write -g ApplePressAndHoldEnabled -bool false
 
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

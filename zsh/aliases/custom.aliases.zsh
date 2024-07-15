@@ -1,8 +1,8 @@
 ### --- custom-alias ------------------------------------------------
 
-alias cat="bat"
-alias vi="lvim"
-alias ls="eza --icons --git"
+#alias cat="bat"
+alias vi="nvim"
+alias ls="ls"
 alias sz="source $ZSH/.zshrc"
 
 ### CD
