@@ -13,3 +13,6 @@ alias gl='git pull'
 alias gp='git push'
 alias grs='git restore'
 alias gs='git status'
+
+# remote
+alias gr="git remote"
