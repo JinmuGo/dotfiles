@@ -1,6 +1,5 @@
 ### INIT
 
-autoload -Uz compinit && compinit
 export PATH=$HOME/bin:/usr/local/bin:/opt/bin:/opt/homebrew/bin:$PATH:$HOME/.local/bin
 export FPATH=/opt/homebrew/bin/eza:$FPATH
 
